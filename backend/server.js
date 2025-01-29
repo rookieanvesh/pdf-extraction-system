@@ -12,8 +12,6 @@ app.use(express.json());
 
 // File upload setup
 const upload = multer({ dest: "uploads/" });
-
-// Test route
 app.get("/", (req, res) => {
     res.send("Backend is running!");
 });
