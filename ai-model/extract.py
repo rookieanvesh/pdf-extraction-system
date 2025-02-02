@@ -9,7 +9,7 @@ def extract_text_from_pdf(pdf_path):
             text = ""
             for page in pdf.pages:
                 page_text = page.extract_text()
-                if page_text:  # Check if the page contains text
+                if page_text:
                     text += page_text + "\n"
             if not text.strip():  # If no text is extracted
                 raise ValueError("The PDF contains no text or cannot be processed.")
